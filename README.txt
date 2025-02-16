@@ -19,4 +19,3 @@ taking into account that you must link the appropriate version of the Acme-Frame
 the following resources:
 
 - **/fragments/**
- 
