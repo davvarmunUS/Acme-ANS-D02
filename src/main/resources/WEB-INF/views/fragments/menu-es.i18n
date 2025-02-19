@@ -10,8 +10,9 @@
 
 # master.menu.anonymous #######################################################
 
-master.menu.anonymous = 21015312M: Vargas Muñiz, David
-master.menu.anonymous.favourite-link = https://www.ducati.com/es/es/motocicletas/panigale/panigale-v4
+master.menu.anonymous = Enlaces favoritos
+master.menu.david.favourite-link = 21015312M: Vargas Muñiz, David
+master.menu.antlopcub.favourite-link = 77862000P: López Cubiles, Antonio José
 
 # master.menu.administrator ###################################################
 
