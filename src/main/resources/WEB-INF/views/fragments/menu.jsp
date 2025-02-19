@@ -21,6 +21,7 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.david.favourite-link" action="https://www.ducati.com/es/es/motocicletas/panigale/panigale-v4"/>
 			<acme:menu-suboption code="master.menu.antlopcub.favourite-link" action="https://nivel20.com/games/dnd-5/rulebooks/4-srd-5-edicion/spell_lists"/>
+			<acme:menu-suboption code="master.menu.jesmarver.favourite-link" action="https://www.youtube.com/watch?v=R6uREJd8ojU"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">
