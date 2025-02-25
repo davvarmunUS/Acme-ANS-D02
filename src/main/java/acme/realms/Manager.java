@@ -1,5 +1,5 @@
 
-package acme.entities.student1;
+package acme.realms;
 
 import java.util.Date;
 
@@ -8,23 +8,24 @@ import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.PastOrPresent;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.client.components.basis.AbstractEntity;
+import acme.client.components.basis.AbstractRole;
+import acme.client.components.mappings.Automapped;
+import acme.client.components.validation.Mandatory;
+import acme.client.components.validation.Optional;
+import acme.client.components.validation.ValidMoment;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Manager extends AbstractEntity {
+public class Manager extends AbstractRole {
 
 	// Serialisation version ---------------------------------------------------------------------------------------
 
@@ -32,23 +33,28 @@ public class Manager extends AbstractEntity {
 
 	// Attributes --------------------------------------------------------------------------------------------------
 
+	@Mandatory
+	@Pattern(regexp = "^[A-Z]{2,3}\\d{6}$")
 	@Column(unique = true)
-	@NotBlank
-	@Pattern(regexp = "^[A-Z]{2,3}\\d{6}$", message = "{validation.manager.identifierNumber}")
 	private String				identifierNumber;
 
-	@NotNull
+	@Mandatory
 	@Positive
 	@Min(0)
+	@Automapped
 	private int					yearsOfExperience;
 
-	@NotNull
-	@PastOrPresent
+	// Así es como debe ser, perfecto, los tres niveles de etiquetas
+	@Mandatory
+	@ValidMoment(past = true)
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				birth;
 
+	// Esta también está bien
+	@Optional
 	@URL
 	@Length(max = 255)
+	@Automapped
 	private String				link;
 
 	// Derived attributes -----------------------------------------------------------------------------------------
