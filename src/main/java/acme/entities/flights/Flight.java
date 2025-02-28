@@ -1,7 +1,10 @@
 
 package acme.entities.flights;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
@@ -42,5 +45,23 @@ public class Flight extends AbstractEntity {
 	@ValidString(max = 255)
 	@Automapped
 	private String				description;
+
+	// Derived attributes -----------------------------------------------------
+
+	private Date				scheduledDeparture;
+
+	private Date				scheduledArrival;
+
+	private String				originCity;
+
+	private String				destinationCity;
+
+	private int					numberOfLayovers;
+
+	// Relationships ----------------------------------------------------------------------------------------------
+
+	@Mandatory
+	@OneToMany
+	private Leg					leg;
 
 }
