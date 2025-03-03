@@ -5,8 +5,10 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.Valid;
 import javax.validation.constraints.Pattern;
 
 import acme.client.components.basis.AbstractEntity;
@@ -49,11 +51,30 @@ public class Leg extends AbstractEntity {
 	private int					duration;
 
 	@Mandatory
+	@Valid
 	@Automapped
 	private Status				status;
+
+	@Mandatory
+	@Valid
+	@Automapped
+	private String				departureAirport;
+
+	@Mandatory
+	@Valid
+	@Automapped
+	private String				arrivalAirport;
+
+	@Mandatory
+	@Valid
+	@Automapped
+	private String				aircraft;
 
 	// Derived attributes -----------------------------------------------------------------------------------------
 
 	// Relationships ----------------------------------------------------------------------------------------------
-
+	@Mandatory
+	@Valid
+	@OneToMany
+	private Flight				flight;
 }
