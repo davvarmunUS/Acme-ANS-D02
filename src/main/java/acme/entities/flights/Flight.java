@@ -1,7 +1,10 @@
 
 package acme.entities.flights;
 
-import java.time.LocalDateTime;
+import java.beans.Transient;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
@@ -50,26 +53,36 @@ public class Flight extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 
 
-	public LocalDateTime getScheduledDeparture() {
-		return null;
+	@Transient
+	public Date getScheduledDeparture() {
+		return this.legs.stream().min(Comparator.comparing(Leg::getScheduledDeparture)).map(Leg::getScheduledDeparture).orElse(null);
 	}
 
-	public LocalDateTime scheduledArrival() {
-		return null;
+	@Transient
+	public Date getScheduledArrival() {
+		return this.legs.stream().max(Comparator.comparing(Leg::getScheduledArrival)).map(Leg::getScheduledArrival).orElse(null);
 	}
 
+	@Transient
+	public String getOriginCity() {
+		return this.legs.stream().min(Comparator.comparing(Leg::getScheduledDeparture)).map(Leg::getDepartureAirport).orElse(null);
+	}
 
-	private String	originCity;
-
-	private String	destinationCity;
-
-	private int		numberOfLayovers;
+	@Transient
+	public String getDestinationCity() {
+		return this.legs.stream().max(Comparator.comparing(Leg::getScheduledArrival)).map(Leg::getArrivalAirport).orElse(null);
+	}
+	@Transient
+	public int getNumberOfLayovers() {
+		return Math.max(this.legs.size() - 1, 0);
+	}
 
 	// Relationships ----------------------------------------------------------------------------------------------
+
 
 	@Mandatory
 	@Valid
 	@OneToMany
-	private Leg		leg;
+	private List<Leg> legs;
 
 }
