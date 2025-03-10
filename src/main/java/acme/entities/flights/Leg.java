@@ -1,11 +1,13 @@
 
 package acme.entities.flights;
 
+import java.beans.Transient;
+import java.time.Duration;
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -32,7 +34,6 @@ public class Leg extends AbstractEntity {
 
 	@Mandatory
 	@Pattern(regexp = "^[A-Z]{2,3}\\d{4}$")
-	@ValidString
 	@Column(unique = true)
 	private String				flightNumber;
 
@@ -47,34 +48,38 @@ public class Leg extends AbstractEntity {
 	private Date				scheduledArrival;
 
 	@Mandatory
-	@Automapped
-	private int					duration;
-
-	@Mandatory
 	@Valid
 	@Automapped
 	private Status				status;
 
 	@Mandatory
-	@Valid
+	@ValidString
 	@Automapped
 	private String				departureAirport;
 
 	@Mandatory
-	@Valid
+	@ValidString
 	@Automapped
 	private String				arrivalAirport;
 
 	@Mandatory
-	@Valid
+	@ValidString
 	@Automapped
 	private String				aircraft;
 
 	// Derived attributes -----------------------------------------------------------------------------------------
 
+
+	@Transient
+	public int duration() {
+		long durationInMinutes = Duration.between(this.scheduledDeparture.toInstant(), this.scheduledArrival.toInstant()).toMinutes();
+		return (int) Math.ceil(durationInMinutes / 60.0);
+	}
+
+
 	// Relationships ----------------------------------------------------------------------------------------------
 	@Mandatory
 	@Valid
-	@OneToMany
-	private Flight				flight;
+	@ManyToOne
+	private Flight flight;
 }
