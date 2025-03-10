@@ -8,21 +8,16 @@ import java.lang.annotation.Target;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.Positive;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = {})
+@Constraint(validatedBy = ManagerValidator.class)
 
-@Positive
-@Min(0)
-
-public @interface ValidYears {
+public @interface ValidManager {
 
 	//Standard validation properties ---------------------------------------------------------------------------
 
-	String message() default "{acme.validation.type.message}"; //crear el archivo message en fragments
+	String message() default "pattern \"^[A-Z]{2-3}\\d{6}$\", where the first two or three letters correspond to their initials";
 
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
