@@ -38,17 +38,19 @@ public class Customer extends AbstractRole {
 	private Phone				phoneNumber;
 
 	@Mandatory
-	@Length(min = 1, max = 75)
+	@Length(min = 1, max = 255)
 	@ValidString
 	@Automapped
 	private String				physicalAddress;
 
 	@Mandatory
+	@Length(min = 1, max = 50)
 	@ValidString
 	@Automapped
 	private String				city;
 
 	@Mandatory
+	@Length(min = 1, max = 50)
 	@ValidString
 	@Automapped
 	private String				country;
