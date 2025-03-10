@@ -29,13 +29,13 @@ import javax.validation.constraints.Pattern;
 @ReportAsSingleViolation
 
 @NotBlank
-@Pattern(regexp = "^[A-Z]{2-3}\\d{6}$")
+@Pattern(regexp = "^[A-Z0-9]{6,9}$")
 
-public @interface ValidCustomerIdentifier {
+public @interface ValidPassport {
 
 	// Standard validation properties -----------------------------------------
 
-	String message() default "{acme.validation.customer.identifier.message}";
+	String message() default "{acme.validation.passenger.passport.message}";
 
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
