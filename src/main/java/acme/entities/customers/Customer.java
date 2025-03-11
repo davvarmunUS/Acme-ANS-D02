@@ -12,7 +12,7 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidString;
 import acme.constraints.ValidCustomerIdentifier;
-import acme.datatypes.Phone;
+import acme.constraints.ValidPhone;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -35,7 +35,8 @@ public class Customer extends AbstractRole {
 
 	@Mandatory
 	@Automapped
-	private Phone				phoneNumber;
+	@ValidPhone
+	private String				phoneNumber;
 
 	@Mandatory
 	@Length(min = 1, max = 255)
