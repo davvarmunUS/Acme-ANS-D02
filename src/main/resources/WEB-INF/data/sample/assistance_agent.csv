@@ -1,0 +1,3 @@
+key,code,languages,airline,moment,bio,salary,photoLink
+assistance-agent-01,ABC123456,Español,Ryanair,2021/04/23 18:00,Test bio,EUR 100.00,https://www.google.es
+assistance-agent-02,ABC000000,Español,Ryanair,2021/04/23 18:00,Test bio,EUR 0.00,""
