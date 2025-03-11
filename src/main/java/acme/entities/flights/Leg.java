@@ -25,7 +25,7 @@ import lombok.Setter;
 @Setter
 public class Leg extends AbstractEntity {
 
-	// Serialisation version --------------------------------------------------
+	// Serialisation version ---------------------------------------------------
 
 	private static final long	serialVersionUID	= 1L;
 
