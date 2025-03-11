@@ -1,0 +1,4 @@
+key,registrationMoment,passengerEmail,description,type,indicator,key:assistanceAgent
+claim-01,2021/05/10 10:00,test@test.com,test description,LUGGAGE_ISSUES,false,assistance-agent-01
+claim-02,2021/05/10 10:00,test2@test.com,test description 2,FLIGHT_ISSUES,true,assistance-agent-01
+claim-03,2021/05/10 10:00,test3@test.com,test description 3,OTHER_ISSUES,true,assistance-agent-02
