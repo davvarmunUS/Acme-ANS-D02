@@ -17,7 +17,7 @@ public @interface ValidManager {
 
 	//Standard validation properties ---------------------------------------------------------------------------
 
-	String message() default "pattern \"^[A-Z]{2-3}\\d{6}$\", where the first two or three letters correspond to their initials";
+	String message() default "";
 
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};

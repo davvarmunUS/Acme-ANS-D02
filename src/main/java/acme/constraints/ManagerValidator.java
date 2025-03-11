@@ -37,7 +37,7 @@ public class ManagerValidator extends AbstractValidator<ValidManager, Manager> {
 		boolean validIdentifier = false;
 
 		if (manager.getUserAccount() == null)
-			super.state(context, false, "*", "javax.validation.constraints.NotNull.message");
+			super.state(context, false, "*", "validation.manager.code");
 		else {
 			String initials = this.getInitials(manager);
 			String identifier = manager.getIdentifierNumber();
