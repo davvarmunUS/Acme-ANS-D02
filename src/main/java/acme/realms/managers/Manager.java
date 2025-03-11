@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.Valid;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
 
@@ -49,14 +50,19 @@ public class Manager extends AbstractRole {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				birth;
 
-	// Esta también está bien
 	@Optional
 	@ValidUrl
 	@Length(max = 255)
 	@Automapped
 	private String				link;
 
+	@Mandatory
+	@Valid
+	@Automapped
+	private Boolean				draftMode;
+
 	// Derived attributes -----------------------------------------------------------------------------------------
 
 	// Relationships ----------------------------------------------------------------------------------------------
+
 }

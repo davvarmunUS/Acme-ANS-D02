@@ -17,7 +17,6 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidString;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -53,19 +52,9 @@ public class Leg extends AbstractEntity {
 	private Status				status;
 
 	@Mandatory
-	@ValidString
+	@Valid
 	@Automapped
-	private String				departureAirport;
-
-	@Mandatory
-	@ValidString
-	@Automapped
-	private String				arrivalAirport;
-
-	@Mandatory
-	@ValidString
-	@Automapped
-	private String				aircraft;
+	private Boolean				draftMode;
 
 	// Derived attributes -----------------------------------------------------------------------------------------
 
@@ -80,6 +69,21 @@ public class Leg extends AbstractEntity {
 	// Relationships ----------------------------------------------------------------------------------------------
 	@Mandatory
 	@Valid
-	@ManyToOne
+	@ManyToOne(optional = false)
 	private Flight flight;
+
+	//	@Mandatory
+	//	@Valid
+	//	@OneToOne(optional = false)
+	//	private Airport	departureAirport;
+	//
+	//	@Mandatory
+	//	@ValidString
+	//	@OneToOne(optional = false)
+	//	private Airport	arrivalAirport;
+
+	//	@Mandatory
+	//	@ValidString
+	//	@OneToOne(optional = false)
+	//	private Aircraft	aircraft;
 }
