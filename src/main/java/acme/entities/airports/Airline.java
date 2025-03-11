@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
+import javax.validation.constraints.Pattern;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.mappings.Automapped;
@@ -16,6 +17,7 @@ import acme.client.components.validation.ValidEmail;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidString;
 import acme.client.components.validation.ValidUrl;
+import acme.datatypes.Phone;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -37,6 +39,7 @@ public class Airline extends AbstractEntity {
 
 	@Mandatory
 	@Automapped
+	@Pattern(regexp = "^[A-Z]{2}X$")
 	private String				code;
 
 	@Mandatory
@@ -62,7 +65,7 @@ public class Airline extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@Automapped
-	private String				phoneNumber;
+	private Phone				phoneNumber;
 
 	// Derived attributes -----------------------------------------------------
 
