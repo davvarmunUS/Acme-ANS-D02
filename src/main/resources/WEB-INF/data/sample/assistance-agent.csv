@@ -1,0 +1,4 @@
+key,code,languages,airline,moment,bio,salary,photoLink,key:userAccount
+assistance-agent-01,ABC123456,Español,Ryanair,2021/04/23 18:00,Test bio,EUR 100.00,https://www.google.es,user-account-assistance-agent-01
+assistance-agent-02,ABC000000,Español,Ryanair,2021/04/23 18:00,Test bio,EUR 0.00,"",user-account-assistance-agent-02
+assistance-agent-03,AAA111111,Español,Vueling,2021/04/23 18:00,"","","",user-account-manager-03
