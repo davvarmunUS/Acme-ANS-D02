@@ -34,7 +34,6 @@ public class TrackingLog extends AbstractEntity {
 	@Mandatory
 	@Temporal(TemporalType.TIMESTAMP)
 	@ValidMoment
-	@Automapped
 	private Date				updateMoment;
 
 	@Mandatory

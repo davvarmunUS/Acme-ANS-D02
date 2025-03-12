@@ -33,7 +33,6 @@ public class Claim extends AbstractEntity {
 	@Mandatory
 	@ValidMoment(past = true)
 	@Temporal(TemporalType.TIMESTAMP)
-	@Automapped
 	private Date				registrationMoment;
 
 	@Mandatory
