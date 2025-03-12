@@ -75,13 +75,13 @@ public class Leg extends AbstractEntity {
 	//	@Mandatory
 	//	@Valid
 	//	@OneToOne(optional = false)
-	//	private Airport	departureAirport;
+	//	private Airport		departureAirport;
 	//
 	//	@Mandatory
 	//	@ValidString
 	//	@OneToOne(optional = false)
-	//	private Airport	arrivalAirport;
-
+	//	private Airport		arrivalAirport;
+	//
 	//	@Mandatory
 	//	@ValidString
 	//	@OneToOne(optional = false)
