@@ -1,5 +1,5 @@
 
-package acme.entities.claim;
+package acme.entities.claims;
 
 import java.util.Date;
 
@@ -10,11 +10,12 @@ import javax.persistence.TemporalType;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
+import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidEmail;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidString;
-import acme.entities.assistance_agents.AssistanceAgent;
+import acme.realms.AssistanceAgent;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -36,19 +37,23 @@ public class Claim extends AbstractEntity {
 
 	@Mandatory
 	@ValidEmail
+	@Automapped
 	private String				passengerEmail;
 
 	@Mandatory
 	@ValidString(max = 255)
+	@Automapped
 	private String				description;
 
 	@Mandatory
-	@Valid
+	@Automapped
 	private ClaimType			type;
 
 	@Mandatory
-	@Valid
+	@Automapped
 	private Boolean				indicator;
+
+	// Relationships -------------------------------------------------------------
 
 	@Valid
 	@ManyToOne(optional = false)

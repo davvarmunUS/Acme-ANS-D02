@@ -49,7 +49,7 @@ public class Leg extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@Automapped
-	private Status				status;
+	private StatusLeg			status;
 
 	@Mandatory
 	@Valid

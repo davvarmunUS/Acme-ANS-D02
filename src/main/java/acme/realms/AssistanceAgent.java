@@ -1,5 +1,5 @@
 
-package acme.entities.assistance_agents;
+package acme.realms;
 
 import java.util.Date;
 
@@ -8,9 +8,11 @@ import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import acme.client.components.basis.AbstractEntity;
+import acme.client.components.basis.AbstractRole;
 import acme.client.components.datatypes.Money;
+import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
+import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoney;
 import acme.client.components.validation.ValidString;
@@ -21,7 +23,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class AssistanceAgent extends AbstractEntity {
+public class AssistanceAgent extends AbstractRole {
 
 	// Serialisation version --------------------------------------------------
 
@@ -32,14 +34,17 @@ public class AssistanceAgent extends AbstractEntity {
 	@Column(unique = true)
 	@Mandatory
 	@ValidString(pattern = "^[A-Z]{2,3}\\d{6}$")
+	@Automapped
 	private String				code;
 
 	@Mandatory
-	@ValidString(min = 0, max = 255)
+	@ValidString(min = 1, max = 255)
+	@Automapped
 	private String				languages;
 
 	@Mandatory
 	@ValidString
+	@Automapped
 	private String				airline;
 
 	@Mandatory
@@ -47,13 +52,19 @@ public class AssistanceAgent extends AbstractEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				moment;
 
+	@Optional
 	@ValidString(max = 255)
+	@Automapped
 	private String				bio;
 
+	@Optional
 	@ValidMoney
+	@Automapped
 	private Money				salary;
 
+	@Optional
 	@ValidUrl
+	@Automapped
 	private String				photoLink;
 
 }
