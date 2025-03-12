@@ -1,0 +1,21 @@
+key,key:userAccount,identifier,phoneNumber,physicalAddress,city,country,earnedPoints
+customer-01,user-account-customer-01,AB123456,+34611111111,Calle Mayor 123,Seville,Spain,500000
+customer-02,user-account-customer-02,AA111111,+447777777777,Avenida del Sol 45,Madrid,Spain,100000
+customer-03,user-account-customer-03,ZZ999999,+15555551234,Baker Street 221B,London,UK,75000
+customer-04,user-account-customer-04,GH321654,+819012345678,Shibuya Crossing,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Japan,5000
+customer-05,user-account-customer-05,IJ456789,+33612345678,Rue de Rivoli,Paris,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,200000
+customer-06,user-account-customer-06,KL789123,+4915112345678,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Berlin,Germany,34000
+customer-07,user-account-customer-07,AA111112,+61234567890,A,Sydney,Australia,500000
+customer-08,user-account-customer-08,AA111113,+551199999999,Avenida Paulista,A,Brazil,450000
+customer-09,user-account-customer-09,AA111114,+521234567890,Reforma 123,Mexico City,A,125000
+customer-10,user-account-customer-10,ST321987,+27123456789,Long Street,Cape Town,South Africa,8000
+customer-11,user-account-customer-11,UV987123,+821011223344,Hongdae,Seoul,South Korea,7500
+customer-12,user-account-customer-12,WX654789,+393471234567,Via Roma 10,Rome,Italy,10000
+customer-13,user-account-customer-13,YZ789321,+358401234567,Mannerheimintie 5,Helsinki,Finland,90000
+customer-14,user-account-customer-14,ZA123654,+48123456789,Ulica Długa,Krakow,Poland,300000
+customer-15,user-account-customer-15,BC456987,+351912345678,Avenida da Liberdade,Lisbon,Portugal,27000
+customer-16,user-account-customer-16,DE789231,+31201234567,Kalverstraat,Amsterdam,Netherlands,195000
+customer-17,user-account-customer-17,FG231879,+41791234567,Bahnhofstrasse,Zurich,Switzerland,480000
+customer-18,user-account-customer-18,HI987312,+752123456789,Insurgentes Sur 89,Mexico City,Mexico,220000
+customer-19,user-account-customer-19,JK654238,+672312345678,Queens Street,Auckland,New Zealand,15000
+customer-20,user-account-customer-20,LM123678,+85261234567,Nathan Road,Hong Kong,China,325000
