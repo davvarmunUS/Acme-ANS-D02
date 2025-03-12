@@ -1,0 +1,4 @@
+key,updateMoment,step,resolutionPercentage,indicator,resolution,key:claim
+tracking-log-01,2022/10/10 10:00,Test,100,false,Test resolution,claim-01
+tracking-log-02,2022/10/10 10:00,Test step,20,true,Test test test,claim-02
+tracking-log-03,2022/10/10 10:00,Test step,20,true,"",claim-02
