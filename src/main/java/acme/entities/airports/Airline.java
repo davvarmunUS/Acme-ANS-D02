@@ -4,6 +4,7 @@ package acme.entities.airports;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -65,10 +66,15 @@ public class Airline extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@Automapped
-	private Phone				phoneNumber;
+	private Boolean				draftMode;
 
 	// Derived attributes -----------------------------------------------------
 
 	// Relationships ----------------------------------------------------------------------------------------------
+
+	@Mandatory
+	@Valid
+	@OneToOne(optional = false)
+	private Phone				phoneNumber;
 
 }
