@@ -5,6 +5,9 @@ user-account-consumer-03,true,"UserIdentity{name: 'Manolo', surname: '之乎路�
 user-account-provider-01,true,"UserIdentity{name: 'Laurel', surname: 'Provider', email: 'laurel@acme.com'}",provider1,provider1
 user-account-provider-02,true,"UserIdentity{name: 'Martina', surname: 'коза თხა', email: 'martina@acme.com'}",provider2,provider2
 user-account-provider-03,true,"UserIdentity{name: 'Antonia', surname: 'אבטיח Æløzå', email: 'antonia@acme.com'}",provider3,provider3
+user-account-manager-01,true,"UserIdentity{name: 'Antonia', surname: 'אבטיח Æløzå', email: 'antonia@acme.com'}",manager1,manager1
+user-account-manager-02,true,"UserIdentity{name: 'Antonia', surname: 'אבטיח Æløzå', email: 'antonia@acme.com'}",manager2,manager2
+user-account-manager-03,true,"UserIdentity{name: 'Antonia', surname: 'אבטיח Æløzå', email: 'antonia@acme.com'}",manager3,manager3
 user-account-customer-01,true,"UserIdentity{name: 'Antonio', surname: 'Lopez', email: 'antonio@acme.com'}",customer1,customer1
 user-account-customer-02,true,"UserIdentity{name: 'Manuel', surname: 'Montoya', email: 'montoya@acme.com'}",customer2,customer2
 user-account-customer-03,true,"UserIdentity{name: 'Jose', surname: 'Cubiles', email: 'Jose@acme.com'}",customer3,customer3
@@ -172,3 +175,4 @@ user-account-assistance-agent-143,true,"UserIdentity{name: 'Manager', surname: '
 user-account-assistance-agent-144,true,"UserIdentity{name: 'Manager', surname: 'Test', email: 'manager4@acme.com'}",agent144,agent144
 user-account-assistance-agent-145,true,"UserIdentity{name: 'Manager', surname: 'Test', email: 'manager4@acme.com'}",agent145,agent145
 user-account-assistance-agent-146,true,"UserIdentity{name: 'Manager', surname: 'Test', email: 'manager4@acme.com'}",agent146,agent146
+>>>>>>> refs/remotes/origin/master
