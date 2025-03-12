@@ -1,0 +1,6 @@
+code,phone,languageSkill,availabilityStatus,airline,salary,yearsOfExperience,duty,username,password
+AB123456,+123456789,English,AVAILABLE,AirlineX,50000,5,PILOT,member1,member1
+CD654321,+987654321,Spanish,ON_VACATION,AirlineY,45000,3,COPILOT,member2,member2
+EF112233,+112233445,French,ON_LEAVE,AirlineZ,47000,4,LEAD_ATTENDANT,member3,member3
+GH445566,+223344556,German,AVAILABLE,AirlineW,48000,6,CABIN_ATTENDANT,member4,member4
+IJ778899,+334455667,French,AVAILABLE,AirlineX,0,0,NONE,member5,member5
