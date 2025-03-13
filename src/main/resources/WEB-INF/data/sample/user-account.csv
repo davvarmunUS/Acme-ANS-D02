@@ -30,7 +30,6 @@ user-account-customer-19,true,"UserIdentity{name: 'Javier', surname: 'Lopez', em
 user-account-customer-20,true,"UserIdentity{name: 'Cristina', surname: 'Serrano', email: 'cristina@acme.com'}",customer20,customer20
 user-account-assistance-agent-01,true,"UserIdentity{name: 'Jesús', surname: 'Martín', email: 'agent1@acme.com'}",agent1,agent1
 user-account-assistance-agent-02,true,"UserIdentity{name: 'Agent', surname: 'Test', email: 'agent2@acme.com'}",agent2,agent2
-user-account-manager-03,true,"UserIdentity{name: 'Manager', surname: 'Test', email: 'manager3@acme.com'}",manager3,manager3
 user-account-assistance-agent-03,true,"UserIdentity{name: 'Manager', surname: 'Test', email: 'manager4@acme.com'}",agent3,agent3
 user-account-assistance-agent-04,true,"UserIdentity{name: 'Manager', surname: 'Test', email: 'manager4@acme.com'}",agent4,agent4
 user-account-assistance-agent-05,true,"UserIdentity{name: 'Manager', surname: 'Test', email: 'manager4@acme.com'}",agent5,agent5
@@ -175,4 +174,3 @@ user-account-assistance-agent-143,true,"UserIdentity{name: 'Manager', surname: '
 user-account-assistance-agent-144,true,"UserIdentity{name: 'Manager', surname: 'Test', email: 'manager4@acme.com'}",agent144,agent144
 user-account-assistance-agent-145,true,"UserIdentity{name: 'Manager', surname: 'Test', email: 'manager4@acme.com'}",agent145,agent145
 user-account-assistance-agent-146,true,"UserIdentity{name: 'Manager', surname: 'Test', email: 'manager4@acme.com'}",agent146,agent146
->>>>>>> refs/remotes/origin/master
