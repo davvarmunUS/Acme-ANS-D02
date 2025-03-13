@@ -1,0 +1,5 @@
+key,key:crewMember,duty,lastUpdate,currentStatus,remarks
+assign1,member1,PILOT,2022/10/10 10:00,CONFIRMED,Assigned as lead pilot for Flight 101
+assign2,member2,CO_PILOT,2022/10/10 10:00,CANCELLED,Reassigned due to training
+assign3,member3,LEAD_ATTENDANT,2022/10/10 10:00,CONFIRMED,Leave approved until next month
+assign4,member4,CABIN_ATTENDANT,2022/10/10 10:00,PENDING,New cabin crew for international routes

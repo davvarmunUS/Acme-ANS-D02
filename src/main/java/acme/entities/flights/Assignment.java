@@ -6,6 +6,8 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -37,7 +39,7 @@ public class Assignment extends AbstractEntity {
 
 	@Mandatory
 	@ValidMoment
-	@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date				lastUpdate;
 
 	@Mandatory
@@ -49,4 +51,9 @@ public class Assignment extends AbstractEntity {
 	@ValidString(max = 255)
 	@Automapped
 	private String				remarks;
+
+	@ManyToOne(optional = false)
+	@JoinColumn(name = "code", referencedColumnName = "code") // Referencia correcta a la clave en CrewMembers
+	private CrewMembers			crewMember;
+
 }
