@@ -2,6 +2,7 @@
 package acme.entities.customers;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
@@ -12,8 +13,6 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidString;
 import acme.constraints.ValidCustomerIdentifier;
-import acme.constraints.ValidPhone;
-import acme.datatypes.Phone;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -36,8 +35,8 @@ public class Customer extends AbstractRole {
 
 	@Mandatory
 	@Automapped
-	@ValidPhone
-	private Phone				phoneNumber;
+	@Pattern(regexp = "^\\+?\\d{6,15}$")
+	private String				phoneNumber;
 
 	@Mandatory
 	@Length(min = 1, max = 255)

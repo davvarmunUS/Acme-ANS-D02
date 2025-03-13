@@ -1,5 +1,5 @@
 key,key:userAccount,identifier,phoneNumber,physicalAddress,city,country,earnedPoints
-customer-01,user-account-customer-01,AB123456,+348775777679,Calle Mayor 123,Seville,Spain,500000
+customer-01,user-account-customer-01,AB123456,+447777777777,Calle Mayor 123,Seville,Spain,500000
 customer-02,user-account-customer-02,AA111111,+447777777777,Avenida del Sol 45,Madrid,Spain,100000
 customer-03,user-account-customer-03,ZZ999999,+15555551234,Baker Street 221B,London,UK,75000
 customer-04,user-account-customer-04,GH321654,+819012345678,Shibuya Crossing,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Japan,5000
