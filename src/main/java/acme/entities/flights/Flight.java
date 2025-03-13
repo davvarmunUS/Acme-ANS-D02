@@ -54,7 +54,8 @@ public class Flight extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 
 	//	private List<Leg>			legs;
-
+	//
+	//
 	//	@Transient
 	//	public Date getScheduledDeparture() {
 	//		return this.legs.stream().min(Comparator.comparing(Leg::getScheduledDeparture)).map(Leg::getScheduledDeparture).orElse(null);
