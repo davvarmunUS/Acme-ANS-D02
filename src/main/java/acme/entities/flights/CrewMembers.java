@@ -1,10 +1,14 @@
 
 package acme.entities.flights;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.OneToMany;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
@@ -61,7 +65,12 @@ public class CrewMembers extends AbstractEntity {
 	private Money				salary;
 
 	@Optional
-	@ValidNumber(min = 0, max = 99, integer = 2, fraction = 0)
+	@ValidNumber(min = 0, max = 80)
 	@Automapped
 	private int					yearsOfExperience;
+
+	// Relationships -------------------------------------------------------------
+
+	@OneToMany(mappedBy = "crewMember", cascade = CascadeType.ALL, orphanRemoval = true)
+	private List<Assignment>	assignments; // Un CrewMember tiene varias asignaciones
 }
