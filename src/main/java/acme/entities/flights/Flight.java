@@ -12,7 +12,6 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoney;
 import acme.client.components.validation.ValidString;
-import acme.entities.passenger.Passenger;
 import acme.realms.managers.Manager;
 import lombok.Getter;
 import lombok.Setter;
@@ -88,9 +87,9 @@ public class Flight extends AbstractEntity {
 	@ManyToOne(optional = false)
 	private Manager				manager;
 
-	@Mandatory
-	@Valid
-	@ManyToOne
-	private Passenger			passenger;
+	//	@Mandatory
+	//	@Valid
+	//	@ManyToOne
+	//	private Passenger			passenger;
 
 }

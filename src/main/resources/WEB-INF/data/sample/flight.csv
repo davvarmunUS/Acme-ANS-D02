@@ -1,0 +1,31 @@
+key,tag,indication,cost,description,draftMode,key:manager
+flight-001,<marquee>Hacked</marquee>,true,100.00 USD,Standard flight,true,manager-01
+flight-002,洛伦·伊普森,false,0.01 EUR,Cheapest possible flight,true,manager-02
+flight-003,Flight Gamma,true,999999.99 GBP,Most expensive luxury flight,true,manager-03
+flight-004,Flight Delta,false,50.50 JPY,Affordable economy flight,true,manager-01
+flight-005,Flight Epsilon,true,12345.67 CAD,,true,manager-02
+flight-006,Flight Zeta,false,777.77 AUD,High demand business route,true,manager-03
+flight-007,Flight Eta,true,2000.00 CHF,International corporate travel,true,manager-01
+flight-008,Flight Theta,false,500.00 SEK,Scandinavian adventure,true,manager-02
+flight-009,Flight Iota,true,150.75 NOK,Norwegian fjord tour,true,manager-03
+flight-010,Flight Kappa,false,89.99 DKK,Danish holiday trip,true,manager-01
+flight-011,Flight Lambda,true,50000.00 USD,High-end tour,true,manager-02
+flight-012,Flight Mu,false,350.00 EUR,Budget-friendly tour,true,manager-03
+flight-013,Flight Nu,true,9999.99 JPY,Chartered service,true,manager-01
+flight-014,Flight Xi,false,15.75 USD,Short domestic route,true,manager-02
+flight-015,Flight Omicron,true,275.25 SGD,Mid-range travel,true,manager-03
+flight-016,Flight Pi,false,600.00 BRL,South American journey,true,manager-01
+flight-017,Flight Rho,true,450.50 MXN,Mexican excursion,true,manager-02
+flight-018,Flight Sigma,false,800.00 ARS,Argentinian adventure,true,manager-03
+flight-019,Flight Tau,true,950.00 CLP,Chilean escape,true,manager-01
+flight-020,Flight Upsilon,false,1200.00 COP,Colombian discovery,true,manager-02
+flight-021,Flight Phi,true,1100.00 PEN,Peruvian expedition,true,manager-03
+flight-022,Flight Chi,false,1300.00 BOB,Bolivian journey,true,manager-01
+flight-023,Flight Psi,true,1400.00 PYG,Paraguayan tour,true,manager-02
+flight-024,Flight Omega,false,1500.00 UYU,Uruguayan trip,true,manager-03
+flight-025,Flight Alpha,true,1600.00 VES,Venezuelan voyage,true,manager-01
+flight-026,Flight Beta,false,1700.00 GTQ,Guatemalan getaway,true,manager-02
+flight-027,Flight Gamma,true,1800.00 HNL,Honduran holiday,true,manager-03
+flight-028,Flight Delta,false,1900.00 NIO,Nicaraguan adventure,true,manager-01
+flight-029,Flight Epsilon,true,2000.00 CRC,Costa Rican retreat,true,manager-02
+flight-030,Flight Zeta,false,2100.00 PAB,Panamanian passage,true,manager-03
