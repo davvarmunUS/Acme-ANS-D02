@@ -83,7 +83,7 @@ public class Leg extends AbstractEntity {
 	//	private Airport		arrivalAirport;
 	//
 	//	@Mandatory
-	//	@ValidString
+	//	@Valid
 	//	@OneToOne(optional = false)
 	//	private Aircraft	aircraft;
 }
