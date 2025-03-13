@@ -1,5 +1,5 @@
 
-package acme.entities.customers;
+package acme.realms;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.Pattern;
