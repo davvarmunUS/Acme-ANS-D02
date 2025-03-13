@@ -4,6 +4,7 @@ package acme.entities.passenger;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -19,6 +20,7 @@ import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidString;
 import acme.constraints.ValidPassport;
 import acme.entities.bookings.Booking;
+import acme.entities.flights.Flight;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -69,5 +71,10 @@ public class Passenger extends AbstractEntity {
 	@Valid
 	@OneToOne
 	private Booking				booking;
+
+	@Mandatory
+	@Valid
+	@ManyToOne
+	private Flight				flight;
 
 }
