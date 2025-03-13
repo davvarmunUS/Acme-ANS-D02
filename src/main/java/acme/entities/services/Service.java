@@ -3,6 +3,7 @@ package acme.entities.services;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.validation.constraints.Positive;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
@@ -37,6 +38,7 @@ public class Service extends AbstractEntity {
 	private String				pictureLink;
 
 	@Mandatory
+	@Positive
 	private Double				avgDwellTime;
 
 	@Optional
