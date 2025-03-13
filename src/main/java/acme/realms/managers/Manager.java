@@ -9,7 +9,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Positive;
 
 import org.hibernate.validator.constraints.Length;
 
@@ -18,15 +17,15 @@ import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
-import acme.constraints.ValidManager;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-@ValidManager
+//@ValidManager
 public class Manager extends AbstractRole {
 
 	// Serialisation version ---------------------------------------------------------------------------------------
@@ -41,7 +40,7 @@ public class Manager extends AbstractRole {
 	private String				identifierNumber;
 
 	@Mandatory
-	@Positive
+	@ValidNumber(min = 0, max = 120)
 	@Automapped
 	private int					yearsOfExperience;
 
